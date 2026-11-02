@@ -34,3 +34,20 @@ h3{margin:0 0 12px;font-size:16px}
 .tx:last-child{border:0}.amt{display:flex;align-items:center;gap:8px;font-weight:600;white-space:nowrap}
 .x{background:none;border:0;color:#bbb;font-size:20px;cursor:pointer}.x:hover{color:var(--bad)}
 @media(max-width:700px){.grid,.cols{grid-template-columns:1fr}.chat{flex-direction:column}}
+:root{--bg:#fff;--card:#fff}
+[data-theme=dark]{--bg:#15110E;--card:#1F1A16;--ink:#F4EFEA;--mut:#A89F96;--line:#352D26;--ol:#2B1D12}
+body{background:var(--bg)}.card{background:var(--card)}.center{background:linear-gradient(var(--bg),var(--ol))}
+.card.hl{background:var(--o);color:#fff}
+input,select{background:var(--card);color:var(--ink)}
+select{border:1.5px solid var(--line);border-radius:12px;padding:10px;font:inherit}
+.bar2{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}
+.tabs{display:flex;gap:4px;background:var(--ol);padding:4px;border-radius:12px}
+.tabs button{border:0;background:none;color:var(--mut);padding:8px 14px;border-radius:9px;font:600 14px inherit;font-family:inherit;cursor:pointer}
+.tabs .on{background:var(--o);color:#fff}
+.mon{display:flex;align-items:center;gap:10px}.mon button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:9px;width:32px;height:32px;cursor:pointer;font-size:18px}
+.mon b{min-width:130px;text-align:center}
+.donut{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.leg div{display:flex;align-items:center;gap:8px;font-size:14px}.leg i{width:10px;height:10px;border-radius:3px}
+.track div.over{background:var(--bad)}
+.edit{display:flex;gap:8px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line)}.edit input{flex:1;min-width:120px}
+.row h3{margin:0 0 12px}
+@media(max-width:700px){.chat select{width:100%}}
